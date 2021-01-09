@@ -6,7 +6,8 @@
    <title><?= $title; ?></title>
    <link rel="stylesheet" href="/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.min.css"/>
-
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 <body>
    <!-- Navbar -->
@@ -26,7 +27,13 @@
 <script src="/js/bootstrap.min.js"></script>
 <script>
    $(document).ready( function () {
-       $('.datatables').DataTable();
+       $('.datatables').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'print',
+            'pdf'
+        ]
+       });
    } );
 </script>
 </body>

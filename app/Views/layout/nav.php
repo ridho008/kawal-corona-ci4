@@ -9,13 +9,13 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pemetaan Nasional</a>
+        <a class="nav-link" href="/peta-nasional">Pemetaan Nasional</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Global</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pemetaan Global</a>
+        <a class="nav-link" href="/peta-global">Pemetaan Global</a>
       </li>
     </ul>
   </div>

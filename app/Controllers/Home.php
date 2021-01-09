@@ -22,6 +22,26 @@ class Home extends BaseController
 		return view('home', $data);
 	}
 
+   public function pemetaanNasional()
+   {
+      $prov = json_decode(file_get_contents("https://services5.arcgis.com/VS6HdKS0VfIhv8Ct/arcgis/rest/services/COVID19_Indonesia_per_Provinsi/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json"), true);
+      $data = [
+         'title' => 'Pemetaan Nasional',
+         'prov' => $prov
+      ];
+      return view('pemetaan_nasional', $data);
+   }
+
+   public function pemetaanGlobal()
+   {
+      $global = json_decode(file_get_contents("https://api.kawalcorona.com/"), true);
+      $data = [
+         'title' => 'Pemetaan Global',
+         'global' => $global
+      ];
+      return view('pemetaan_global', $data);
+   }
+
 	//--------------------------------------------------------------------
 
 }

@@ -1,6 +1,26 @@
 <?= $this->extend('layout/app'); ?>
 
 <?= $this->section('content'); ?>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="display-4">Pantau Corona</h1>
+          <p class="lead">Aplikasi seluruh data corona (Covid19) Di Seluruh Dunia.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Rasa Tidak Nyaman Dan Nyeri</li>
+            <li class="list-group-item">nyeri tenggorokan</li>
+            <li class="list-group-item">Diare</li>
+            <li class="list-group-item">Sakit Kepala</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="/image/header.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="container">
    <div class="row">
       <div class="col-md-12">
